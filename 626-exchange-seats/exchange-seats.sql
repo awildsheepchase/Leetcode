@@ -1,6 +1,6 @@
 # Write your MySQL query statement below
 SELECT 
-    ROW_NUMBER() OVER (ORDER BY id ASC) AS id,
+    ROW_NUMBER() OVER (ORDER BY id) AS id,
     student
 FROM 
 (SELECT 
