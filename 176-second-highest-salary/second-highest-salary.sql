@@ -8,4 +8,4 @@ FROM
     DENSE_RANK() OVER (ORDER BY salary DESC) AS RANKING
     FROM Employee e ) AS E
 WHERE RANKING = 2;
-# 
+# The DENSE_RANK() function assigns the same rank to rows with identical values, but it does not skip the next rank for rows with the same ranking.
