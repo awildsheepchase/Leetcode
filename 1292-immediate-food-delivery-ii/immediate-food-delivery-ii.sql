@@ -1,5 +1,5 @@
 # Write your MySQL query statement below
-SELECT ROUND(SUM(A)/COUNT(F)*100,2) AS immediate_percentage
+SELECT ROUND(AVG(A/F)*100,2) AS immediate_percentage
 FROM(
     SELECT F,IF(order_date = customer_pref_delivery_date,1,0) AS A
     FROM (
